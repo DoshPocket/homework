@@ -1,9 +1,7 @@
-// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+// Enter password to the #password input field
 function writePassword() {
-  // GIVEN I need a new, secure password
   let password = generatePassword();
   let passwordText = document.querySelector("#password");
 
@@ -22,27 +20,43 @@ function generatePassword () {
       alert ("Error. You have broken me!");
       return;
   }
-}
+  // set variables for all char types and user's choices of which chars to include in final pass
+  let userPassChars = [];
+  let upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" .split("");
+  let lowerChar = "abcdefghiklmnopqrsttuvwxtz" .split("");
+  let numberChar = "0123456789" .split ("");
+  let symbolChar = "*&^%$#@!?><{}" .split("");
+  
+  
+  // confirms user's inclusion of lower case chars
+  let userLowerChar = confirm("Would you like lowercase letters in your password?");
+      if(userLowerChar === true) {
+          for (let i = 0; i < lowerChar.length; i++) {
+              userPassChars.push(lowerChar[i]);
+          }
+      }
+  // confirms user's inclusion of upper case chars
+  let userUpperChar = confirm("Would you like uppercase letters in your password?");
+      if (userUpperChar === true) {
+          for (let i = 0; i < upperChar.length; i++) {
+              userPassChars.push(upperChar[i]);
+          }
+      }
+  // confirms user's inclusion of number chars
+  let userNumberChar = confirm("Would you like numbers in your password?");
+      if (userNumberChar === true) {
+          for (let i = 0; i < numberChar.length; i++) {
+              userPassChars.push(numberChar[i]);
+          }
+      }
+  // confirms user's inclusion of special chars    
+  let userSymbolChar = confirm("Would you like special characters in your password?");
+      if (userSymbolChar === true) {
+          for (let i = 0; i < symbolChar.length; i++) {
+              userPassChars.push(symbolChar[i]);
+          }
+      }
+    }
 
-// function randomLower() {
-//   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-// }
-// function randomUpper() {
-//   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-// }
-// function randomNumber() {
-//   return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-// }
-// function randomSymbol() {
-//   const symbols = '!@#$%^&*_-+=';
-//   return symbols [Math.floor(Math.random() * symbols.length)];
-// }
-// console.log (randomSymbol());
-
-
-// generateBtn.addEventListener("click", () => {
-
-// })
-
-// Add event listener to generate button
+// prompts begin and password generated upon generate button click
 generateBtn.addEventListener("click", writePassword);
