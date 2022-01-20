@@ -27,7 +27,6 @@ function generatePassword () {
   let numberChar = "0123456789" .split ("");
   let symbolChar = "*&^%$#@!?><{}" .split("");
   
-  
   // confirms user's inclusion of lower case chars
   let userLowerChar = confirm("Would you like lowercase letters in your password?");
       if(userLowerChar === true) {
