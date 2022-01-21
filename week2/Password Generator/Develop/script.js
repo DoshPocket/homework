@@ -55,7 +55,17 @@ function generatePassword () {
               userPassChars.push(symbolChar[i]);
           }
       }
-    }
-
+// generate the random password based on user criteria
+let randomPassword = "";
+for (let i = 0; i < userPassLength; i++) {
+    userPassChars[
+        Math.floor(Math.random() * userPassChars.length)];
+    randomPassword +=
+       userPassChars[
+           Math.floor(Math.random() * userPassChars.length)
+       ];
+   }
+return randomPassword;
+}
 // prompts begin and password generated upon generate button click
 generateBtn.addEventListener("click", writePassword);
