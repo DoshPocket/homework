@@ -55,6 +55,10 @@ function generatePassword () {
               userPassChars.push(symbolChar[i]);
           }
       }
+      if (userLowerChar === false, userUpperChar === false, userNumberChar === false, userSymbolChar === false) {
+        alert ("Error. You have broken me!");
+        return;   
+      }
 // generate the random password based on user criteria
 let randomPassword = "";
 for (let i = 0; i < userPassLength; i++) {
