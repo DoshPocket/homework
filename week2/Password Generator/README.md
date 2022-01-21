@@ -11,5 +11,5 @@ This build is licensed under Apache 2.0. (https://www.apache.org/licenses/LICENS
 ## How to Contribute
 Feel free to contribute further to my code within the standards of The [Contributor Covenant](https://www.contributor-covenant.org/). Happy coding!
 
-![Alt text](./assets/.password-g.png "password-generator-input")
-![Alt text](./assets/.password-g2.png "password-generator-random-password")
+![Alt text](./Assets/.password-g.png "password-generator-input")
+![Alt text](./Assets/.password-g2.png "password-generator-random-password")
