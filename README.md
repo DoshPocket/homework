@@ -4,6 +4,11 @@
 
 I built this project to further develop my skills in javascript and to create a strong random password generator that would ask the user which character criteria they wanted in their strong password and then use random generation to output one to the user. While building this project, I learned about the relationshp between the classes and elements on the html page and the variables on the javascript page. I learned how to prompt, confirm, alert,and create "for" loops.
 
+## Deployment
+
+Deployed at: https://doshpocket.github.io/homework/
+GitHub: https://github.com/DoshPocket/homework
+
 ## License
 This build is licensed under Apache 2.0. (https://www.apache.org/licenses/LICENSE-2.0).
 ---
