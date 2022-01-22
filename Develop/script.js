@@ -55,7 +55,7 @@ function generatePassword () {
               userPassChars.push(symbolChar[i]);
           }
       }
-      if (userLowerChar === false, userUpperChar === false, userNumberChar === false, userSymbolChar === false) {
+      if (userLowerChar === false && userUpperChar === false && userNumberChar === false && userSymbolChar === false) {
         alert ("Error. You have broken me!");
         return;   
       }
